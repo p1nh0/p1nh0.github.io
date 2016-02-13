@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>
+			HTB1 - Hypertrombone
+		</title>
+		<!-- ignore cache on all browsers -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<!-- set viewport-->
+		<meta name="viewport" content="width=device-width, width=device-height, initial-scale=1.0">
+		<!-- include my css style sheet -->
+		<link href="../../css/Main.css" rel="stylesheet" type="text/css">
+		<!-- include javascript slideshow code-->
+		<script src="../../js/slideshow.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<!-- TOP MENU -->
+		<iframe id="Menu" src="../../menu.html" scrolling="no"></iframe>
+
+		<!-- PAGE CONTENTS -->
+		
+		<!-- Project description / Abstract -->
+		<div id="Abstract">
+			<h2 id="Title" class="Center">
+				HTB1 - Hypertrombone
+			</h2>
+
+			<p id="Abstract" class="Center">
+				Hypertrombone developed for the final project of the Electronic Music and Musical Production course at ESART - School of Applied Arts of the Polytechnic Institute of Castelo Branco, Portugal, 2010.
+				</br>
+				</br>
+				HTB1-h stands for the hardware components, comprised of an Arduino bluetooth, acceleromenter placed on the bell, force-sensing resistor on the trigger, infra-red and ultra-sound sensors to measure the silde's position and air-flow sensor made with a piezo and a small amplifier.
+				While HTB1-s stands for the software component of the hyperinstrument. Initially it was all made with MaxMSP, while the second version read sensor data with MaxMSP translating them to MIDI, using Ableton Live for sound processing.
+			</p>
+		</div>
+		
+		
+		<!--MULTIPLE SLIDESHOWS-->
+		<div id="Content" class="First">
+			<a href="https://drive.google.com/open?id=0B2kqbB4AVP66XzgzUFhWeXNKOUk" target="_blank">
+				<img id="Album"  src="https://drive.google.com/uc?id=0B2kqbB4AVP66QUIzQnpLckNOdk0" name="slide1">
+			</a>
+		</div>
+		<p id="Footer" class="Center">
+				HTB1-h : hardware component
+		</p>
+
+		<div id="Content">
+			<a href="https://drive.google.com/open?id=0B2kqbB4AVP66b2N3RXpFTzJQWms"	target="_blank">
+				<img id="Album" src="https://drive.google.com/uc?id=0B2kqbB4AVP66U0trZUhXMlFtdnc" name="slide2">
+			</a>
+			<p id="Footer" class="Center">
+				HTB1-s : software component
+			</p>
+		</div>
+
+		<!-- EMPTY FOOTER -->
+		<div id="Empty"> 
+			empty footer
+		</div>
+
+		<!--
+			HOW TO USE IMAGES ON GOOGLE DRIVE IN A BROWSER: 
+				1) files sharing permission must be "Public on the web"
+				2) copy the file ID (the last part of the shared link, containing only numbers and letters)
+				3) append the ID to "https://drive.google.com/uc?id="
+					EXAMPLE: https://drive.google.com/uc?id=0B2kqbB4AVP66T2dwU2ZiU3AxQVk
+		--> 
+		<script type=text/javascript>
+			var SlideList1 = [
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66QUIzQnpLckNOdk0',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66ODEyd1NBcWx0c1U',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66Mm9EbmZtODhuVk0',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66ck00WEtManViTE0',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66blczSXdwNjRid0k',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66dFBDRmkwb1Q2QTA',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66MVFoS2k2TXBWdmc',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66azUxQUNjLVAxWTQ',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66Q0swdGtFRG9NSWM',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66NkhsOW5YQ2Zqamc',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66ZTY5QmFIbzZGcUE',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66dXNkNGJtMnV0S2s',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66ZDNYRnpIa0ZnS28',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66X192amk5VmMyc3c'
+				];
+			var SlideShow1 = new SlideShow(SlideList1, 'slide1', 3000, "SlideShow1");
+			
+
+			var SlideList2 = [
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66U0trZUhXMlFtdnc', 
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66Wlc3UVNEbUtPOE0',
+				'https://drive.google.com/uc?id=0B2kqbB4AVP66dF9vZV8xajJtbUE'
+				];
+			var SlideShow2 = new SlideShow(SlideList2, 'slide2', 3000, "SlideShow2");
+			
+			window.onLoad=SlideShow1.play(); SlideShow2.play();
+		</script>
+
+
+		<!-- mm-fontsize.js by https://github.com/nathanford/min-max-font-size-->
+		<script src="../../js/mm-fontsize.js" type="text/javascript"></script>
+	</body>
+</html>
