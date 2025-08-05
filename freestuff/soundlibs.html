@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Sound Libraries</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="sound-libraries">
+
+    <h1>Sound Libraries</h1>
+
+    <!-- Introductory paragraph -->
+    <p>
+      Here you can explore my curated sound libraries including field recordings, textures, and samples.
+      Each library provides previews, download links, and source information.
+    </p>
+
+    <!-- Container for sound library entries -->
+    <div class="project-list">
+
+      <!-- Example sound library entry -->
+      <article class="project-entry">
+        <img src="../images/soundlib_forest.jpg" alt="Forest Ambience Library preview" />
+        <h2>Forest Ambience Library</h2>
+        <p>A collection of natural forest soundscapes and textures recorded in remote locations.</p>
+        <a href="../projects/soundlibs/forest-ambience.html" class="read-more">Read more</a>
+      </article>
+
+      <article class="project-entry">
+        <img src="../images/soundlib_urban.jpg" alt="Urban Field Recordings preview" />
+        <h2>Urban Field Recordings</h2>
+        <p>A diverse set of field recordings capturing city sounds, crowds, and street life.</p>
+        <a href="../projects/soundlibs/urban-field-recordings.html" class="read-more">Read more</a>
+      </article>
+
+      <!-- Add more sound libraries as needed -->
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+
+</body>
+</html>

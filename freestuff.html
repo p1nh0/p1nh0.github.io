@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Free Stuff</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="free-stuff">
+
+    <h1>Free Stuff</h1>
+
+    <!-- Introductory paragraph about licensing and support -->
+    <p>
+      Most of the content here is free to use, primarily for non-commercial purposes. Please check each item's license or contact me if you are unsure.
+      If you find this useful and want to support my work, feel free to donate via PayPal.
+    </p>
+
+    <!-- PayPal donation button -->
+    <form action="https://www.paypal.com/donate" method="post" target="_blank" novalidate>
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID" />
+      <input type="submit" value="Donate via PayPal" />
+    </form>
+
+    <!-- Grid container for Free Stuff categories -->
+    <div class="free-grid">
+
+      <!-- Top row -->
+      <a href="freestuff/electronics.html" class="free-item">Electronics</a>
+      <a href="freestuff/maxpd.html" class="free-item">Max/Pd</a>
+      <a href="freestuff/maxforlive.html" class="free-item">MaxForLive</a>
+
+      <!-- Bottom row -->
+      <a href="freestuff/soundlibs.html" class="free-item">Sound Libraries</a>
+      <a href="freestuff/soundpacks.html" class="free-item">Elektron Sound Packs</a>
+      <a href="freestuff/otherstuff.html" class="free-item">Others</a>
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+  
+
+</body>
+</html>

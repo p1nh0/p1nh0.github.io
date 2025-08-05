@@ -1,34 +1,109 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html>
-	<head>
-		<!-- ignore cache on all browsers -->
-		<meta http-equiv="cache-control" content="max-age=0" />
-		<meta http-equiv="cache-control" content="no-cache" />
-		<meta http-equiv="expires" content="0" />
-		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<script type="text/javascript">
+  <!-- Page title -->
+  <title>Welcome - Personal Portfolio</title>
 
-		
-		// Create an array of the links to choose from:
-		var links = new Array();
-		links[0] = "http://p1nh0.github.io/comp/line_sine.html";
-		//links[1] = "http://www.tiagoangelo.byethost15.com/comp/white_noise.html";
-		//links[2] = "http://www.tiagoangelo.byethost15.com/comp/box.html";
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-		function openLink() {
-		  // Chooses a random link:
-		  var i = Math.floor(Math.random() * links.length);
-		  // Directs the browser to the chosen target:
-		  parent.location = links[i];
-		  return false;
-		}
-		</script>
-	</head>
-	<body>
-		<script>
-			openLink();
-		</script>
-	</body>
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="landing">
+
+    <h1>Welcome to My Portfolio</h1>
+    <p>Loading a project preview for you...</p>
+
+    <!-- Container for the random project preview -->
+    <div id="random-project-preview" class="project-entry"></div>
+
+  </section>
+
+  <script>
+    // Load the shared menu
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+
+    // List of project page URLs
+    const projects = [
+      'projects/_example-project.html'
+      // Add more project pages here
+    ];
+
+    // Utility: fetch preview info from project page
+    async function fetchProjectPreview(url) {
+      try {
+        const response = await fetch(url);
+        const text = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, 'text/html');
+
+        const title = doc.querySelector('h1')?.textContent || 'No Title';
+        const desc = doc.querySelector('meta[name="description"]')?.getAttribute('content') || 'No description available.';
+        const img = doc.querySelector('img')?.src || '';
+
+        return { url, title, description: desc, img };
+      } catch (err) {
+        console.error(`Failed to fetch preview from ${url}:`, err);
+        return null;
+      }
+    }
+
+    // Pick a random project, fetch its preview, and display it
+    async function loadRandomProject() {
+      if (projects.length === 0) {
+        document.getElementById('random-project-preview').textContent = 'No projects available.';
+        return;
+      }
+
+      const randomIndex = Math.floor(Math.random() * projects.length);
+      const project = projects[randomIndex];
+      const preview = await fetchProjectPreview(project);
+
+      const container = document.getElementById('random-project-preview');
+      container.innerHTML = ''; // Clear previous content
+
+      if (!preview) {
+        container.textContent = 'Failed to load project preview.';
+        return;
+      }
+
+      // Create and append image if exists
+      if (preview.img) {
+        const imgEl = document.createElement('img');
+        imgEl.src = preview.img;
+        imgEl.alt = preview.title + ' preview';
+        container.appendChild(imgEl);
+      }
+
+      // Title as link
+      const titleEl = document.createElement('h2');
+      const linkEl = document.createElement('a');
+      linkEl.href = preview.url;
+      linkEl.textContent = preview.title;
+      titleEl.appendChild(linkEl);
+      container.appendChild(titleEl);
+
+      // Description
+      const descEl = document.createElement('p');
+      descEl.textContent = preview.description;
+      container.appendChild(descEl);
+    }
+
+    loadRandomProject();
+  </script>
+  
+
+</body>
 </html>

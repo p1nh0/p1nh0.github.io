@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Max/Pd Patches</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="maxpd">
+
+    <h1>Max/Pd Patches</h1>
+
+    <!-- Introductory paragraph -->
+    <p>
+      This page showcases my open-source patches and projects created with Max and Pure Data (Pd).
+      Each entry includes descriptions, previews, and download links.
+    </p>
+
+    <!-- Container for patch/project previews -->
+    <div class="project-list">
+
+      <!-- Example patch entry -->
+      <article class="project-entry">
+        <img src="../images/maxpd_patch1.jpg" alt="Interactive Sound Synth preview" />
+        <h2>Interactive Sound Synth</h2>
+        <p>A Max patch designed for real-time sound synthesis and control.</p>
+        <a href="../projects/maxpd/interactive-sound-synth.html" class="read-more">Read more</a>
+      </article>
+
+      <article class="project-entry">
+        <img src="../images/maxpd_patch2.jpg" alt="Sensor Data Mapper preview" />
+        <h2>Sensor Data Mapper</h2>
+        <p>A Pure Data patch that maps sensor inputs to sound modulation parameters.</p>
+        <a href="../projects/maxpd/sensor-data-mapper.html" class="read-more">Read more</a>
+      </article>
+
+      <!-- Add more patches as needed -->
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+
+</body>
+</html>

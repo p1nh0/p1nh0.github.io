@@ -1,0 +1,57 @@
+<!-- projects/_example-project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Example Project: Custom Synth Interface</title>
+
+  <!-- Meta description for preview extraction -->
+  <meta name="description" content="A custom-built synthesizer interface using Arduino and touch sensors." />
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="project-detail">
+
+    <h1>Custom Synth Interface</h1>
+
+    <img src="../images/projects/custom-synth-interface.jpg" alt="Custom Synth Interface" />
+
+    <p>
+      This project presents a custom-built synthesizer interface that uses Arduino microcontrollers
+      combined with capacitive touch sensors to create a novel performance instrument.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Multi-touch sensing with Arduino</li>
+      <li>Custom enclosure designed for ergonomics</li>
+      <li>Integration with Max/MSP for sound control</li>
+    </ul>
+
+    <h2>Downloads & Resources</h2>
+    <p><a href="../downloads/custom-synth-interface.zip" download>Download schematics and code</a></p>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+
+</body>
+</html>

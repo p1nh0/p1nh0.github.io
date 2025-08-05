@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>MaxForLive Devices</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="maxforlive">
+
+    <h1>MaxForLive Devices</h1>
+
+    <!-- Introductory paragraph -->
+    <p>
+      This page lists my open-source MaxForLive devices available for download and use.
+      Each device includes a description, preview, and download link.
+    </p>
+
+    <!-- Container for device/project previews -->
+    <div class="project-list">
+
+      <!-- Example device entry -->
+      <article class="project-entry">
+        <img src="../images/mfl_device1.jpg" alt="Granular Texture Synth preview" />
+        <h2>Granular Texture Synth</h2>
+        <p>A MaxForLive device for creating evolving granular textures in real time.</p>
+        <a href="../projects/maxforlive/granular-texture.html" class="read-more">Read more</a>
+      </article>
+
+      <article class="project-entry">
+        <img src="../images/mfl_device2.jpg" alt="Live Drum Sequencer preview" />
+        <h2>Live Drum Sequencer</h2>
+        <p>A step sequencer device designed for live drum pattern creation and manipulation.</p>
+        <a href="../projects/maxforlive/live-drum-sequencer.html" class="read-more">Read more</a>
+      </article>
+
+      <!-- Add more devices as needed -->
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+
+</body>
+</html>

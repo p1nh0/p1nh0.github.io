@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Music</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="music">
+
+    <h1>Music</h1>
+
+    <!-- Introductory paragraph -->
+    <p>
+      Here you can find a collection of my music projects, compositions, performances, and links to platforms like Bandcamp, SoundCloud, and YouTube.
+    </p>
+
+    <!-- Music entries container -->
+    <div class="music-list">
+
+      <!-- Example music entry -->
+      <article class="music-entry">
+        <h2>Live Performance: Interactive Sound Sculpture</h2>
+        <p>An improvisation using custom-built instruments and live electronics.</p>
+        <p>
+          <a href="https://bandcamp.com/yourprofile" target="_blank" rel="noopener noreferrer">Bandcamp</a> |
+          <a href="https://soundcloud.com/yourprofile" target="_blank" rel="noopener noreferrer">SoundCloud</a> |
+          <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </p>
+      </article>
+
+      <article class="music-entry">
+        <h2>Composition: Sound for Dance Performance</h2>
+        <p>A piece composed for contemporary dance featuring electronic and acoustic sounds.</p>
+        <p>
+          <a href="https://bandcamp.com/yourprofile" target="_blank" rel="noopener noreferrer">Bandcamp</a> |
+          <a href="https://soundcloud.com/yourprofile" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+        </p>
+      </article>
+
+      <!-- Add more music entries as needed -->
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>  
+
+</body>
+</html>

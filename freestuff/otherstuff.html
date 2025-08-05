@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title -->
+  <title>Other Free Stuff</title>
+
+  <!-- Link to shared CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Placeholder for dynamically loaded menu -->
+  <div id="menu-placeholder"></div>
+
+  <section class="other-stuff">
+
+    <h1>Other Free Stuff</h1>
+
+    <!-- Introductory paragraph -->
+    <p>
+      A collection of miscellaneous open-source projects, resources, and creative tools that don't fit into other categories.
+      Feel free to explore, download, and use them!
+    </p>
+
+    <!-- Container for other free stuff entries -->
+    <div class="project-list">
+
+      <!-- Example entry -->
+      <article class="project-entry">
+        <img src="../images/otherstuff_toolkit.jpg" alt="Creative Toolkit preview" />
+        <h2>Creative Toolkit</h2>
+        <p>A set of utilities and scripts for sound design and live performance workflows.</p>
+        <a href="../projects/otherstuff/creative-toolkit.html" class="read-more">Read more</a>
+      </article>
+
+      <article class="project-entry">
+        <img src="../images/otherstuff_installation.jpg" alt="Interactive Installation Code preview" />
+        <h2>Interactive Installation Code</h2>
+        <p>Source code for an interactive sound installation using Arduino and sensors.</p>
+        <a href="../projects/otherstuff/interactive-installation.html" class="read-more">Read more</a>
+      </article>
+
+      <!-- Add more entries as needed -->
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript to load menu dynamically -->
+  <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Failed to load menu:', err));
+  </script>
+
+</body>
+</html>
