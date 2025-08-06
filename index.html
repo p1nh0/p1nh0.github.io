@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tiagoangelo.net</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/menu.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tiagoangelo.net</title>
+    <meta name="author" content="Tiago Angelo" /> 
+    <meta property="og:type" content="website" /> <!-- Open Graph tags improve sharing on social media platforms-->
+    
+    <!-- EDIT THESE...-->
+    <meta name="description" content="[Tiago Ângelo's homepage]" /> <!-- description: The short blurb that shows below your link in search results.-->
+    <meta name="robots" content="index, follow" /> <!-- "index, follow" is recommended unless page should be hidden from search engines -->
+    <meta property="og:title" content="Tiago Ângelo's homepage" /> <!-- The title shown in social previews when shared -->
+    <meta property="og:description" content="[Ângelo's music, instruments, installations and open-source audio stuff]" /> <!-- A snippet shown alongside the link preview. -->
+    <meta property="og:url" content="https://www.tiagoangelo.net/index.html" /> <!-- The canonical URL of the page -->
+    <meta property="og:image" content="https://www.tiagoangelo.net/img/ta.jpg" /> <!-- A preview image shown when the page is shared. Should be at least 1200x630px -->
+    <link rel="canonical" href="https://www.tiagoangelo.net/index.html"/> <!-- Prevents duplicate content issues by telling search engines which version of the page is the "original" or preferred one to index -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> <!-- favicon: icon that show on browser's tab -->
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/menu.js"></script>
 </head>
 
 <body>
-  <div id="menu-placeholder"></div>
-  
-  <script src="/js/randomWork.js" defer></script>
-</body>
+    
+    <!-- Load shared menu -->
+    <div id="menu-placeholder"></div>
+    
+    <!-- Introductory text -->
+    <section>
+        <p>
+            I'm Tiago Angelo — an artist, researcher and creator working across sound, electronics, performance, and teaching.  
+            This site collects my works, tools, and materials I've shared freely with the community.
+        </p>
+    </section>
+    
+    <!-- Random Work Preview -->
+    <section id="random-work" class="works-list"></section>
 
+    <script src="/js/randomWork.js" defer></script>
+</body>
 </html>
