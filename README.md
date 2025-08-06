@@ -1,10 +1,20 @@
-# How to preview pages
+## How to preview pages
     Using VS Code press 'CMD + L' followed by 'CMD + O' (= Live Server open)
 
-# Uploading to github
+## Uploading to github
     on VS Code press 'CTRL + ~' 
     then hit git push and insert password
     (see local file _HOWTO.md) 
+
+## Images and other media
+- All new images/media should go in `/assets/img` or relevant subfolders.
+- Preview images' recommended size: `300x200px` or `400x300px`
+- Full width images' recommended size: `900-1000px` (height dependent on content, but avoid tall images)
+- Page width caps at `960px` !!! 
+- You can use [Sqoosh](https://squoosh.app/) to compress images
+- Images are stored on github's repo for fast loading
+- Other content is either embedded through other platforms (ex: Bandcamp, etc.) or has a download link to your Gdrive
+
 
 # HOWTO: Add Content to www.tiagoangelo.net
 
