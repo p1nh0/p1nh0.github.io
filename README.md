@@ -1,3 +1,6 @@
+# How to preview pages
+    Using VS Code press 'CMD + L' followed by 'CMD + O' (= Live Server open)
+
 # Uploading to github
     on VS Code press 'CTRL + ~' 
     then hit git push and insert password
