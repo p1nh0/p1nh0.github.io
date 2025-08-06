@@ -1,10 +1,10 @@
 ## How to preview pages
-    Using VS Code press 'CMD + L' followed by 'CMD + O' (= Live Server open)
+Using VS Code press `CMD + L` followed by `CMD + O` (= Live Server open)
 
 ## Uploading to github
-    on VS Code press 'CTRL + ~' 
-    then hit git push and insert password
-    (see local file _HOWTO.md) 
+On VS Code press `CTRL + ~` 
+Then hit git push and insert password
+(see local file `/_dev/_HOWTO.md` 
 
 ## Images and other media
 - All new images/media should go in `/assets/img` or relevant subfolders.
@@ -16,7 +16,7 @@
 - Other content is either embedded through other platforms (ex: Bandcamp, etc.) or has a download link to your Gdrive
 
 
-# HOWTO: Add Content to www.tiagoangelo.net
+# HOW TO: Add Content to www.tiagoangelo.net
 
 This guide explains how to properly add new content to your portfolio site, following best practices for structure and SEO.
 
@@ -114,6 +114,6 @@ This is a single file: `teaching.html`.
 - All internal links must use **absolute paths**, e.g. `/projects/2025-sound-sculpture.html`.
 - Keep code tidy and consistent.
 - Always test locally with **Live Server** before pushing to GitHub.
-- Local file _HOWTO.md has more tips
-- local _dev has examples and other useful files
+- Local file `_dev/HOWTO.md`_HOWTO.md has more tips
+- local `/_dev/` has examples and other useful stuff
 ---
