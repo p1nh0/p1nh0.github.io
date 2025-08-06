@@ -1,3 +1,5 @@
 # ignore all _ files and _ folders
 _*
-_/*
+**/_*
+_*/ 
+**/_*/ 
