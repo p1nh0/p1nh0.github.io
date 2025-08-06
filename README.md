@@ -28,12 +28,13 @@ Each project is a separate HTML file in the `/projects` folder.
 
 ### Steps:
 1. **Duplicate** `_example-project.html` and rename it (e.g. `2025-sound-sculpture.html`)
-2. Fill in:
+2. In `/js/loadallprojects.js` add new project directory
+3. Fill in:
    - `<title>` tag (SEO-relevant)
    - `<meta name="description">` tag
    - A relevant `<img>` for preview (stored in `/assets/img`)
    - Text content using clean semantic HTML (`<h1>`, `<p>`, etc.)
-3. Save and test in browser.
+4. Save and test in browser.
 
 **SEO Tips:**
 - Use descriptive filenames: `year-name.html`  
