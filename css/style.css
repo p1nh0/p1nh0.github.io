@@ -241,3 +241,8 @@
     outline: none;
   }
   
+
+  /* bandcamp iframe style */ 
+  .bandcamp {
+    margin-bottom: 20px;
+  }
