@@ -51,21 +51,24 @@
   nav a {
     text-decoration: none;
     color: #111;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
   }
   
   nav a:hover,
   nav a.active {
-    color: #666;
-    font-weight: bold;
+    color: #888;
   }
   
   /* Grid */
   .grid-container {
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
+    max-width: 800px; /* narrower to keep squares manageable */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 6rem;
   }
   
   .grid-item {
@@ -73,6 +76,13 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
+
+    color: #333;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+    user-select: none;
   }
   
   /* Works list styling */
