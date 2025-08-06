@@ -26,15 +26,10 @@
 
   </section>
 
-  <script>
-    // Load the shared menu
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('menu-placeholder').innerHTML = data;
-      })
-      .catch(err => console.error('Failed to load menu:', err));
+  <!-- JavaScript to load menu dynamically -->
+  <script src="/js/menu.js"></script> 
 
+  <script>
     // List of project page URLs
     const projects = [
       'projects/_example-project.html'
