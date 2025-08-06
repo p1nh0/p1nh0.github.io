@@ -1,72 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Basic meta tags -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Page title -->
   <title>Music</title>
-
-  <!-- Link to shared CSS stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-
-  <!-- Placeholder for dynamically loaded menu -->
   <div id="menu-placeholder"></div>
+  <script src="/js/menu.js"></script>
+  
+  <h2>Music</h2>
+  
+  <p>This page includes links to my released works, compositions, performances, and soundtracks.</p>
 
-  <section class="music">
+  <div class="bandcamp-embed">
+    <iframe style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless>
+      <a href="https://yourartist.bandcamp.com/album/example-album">Example Album</a>
+    </iframe>
+  </div>
 
-    <h1>Music</h1>
-
-    <!-- Introductory paragraph -->
-    <p>
-      Here you can find a selection of some music projects, compositions, performances and collaborations.
-    </p>
-
-    <!-- Music entries container -->
-    <div class="music-list">
-
-      <!-- Example music entry
-      <article class="music-entry">
-        <h2>Live Performance: Interactive Sound Sculpture</h2>
-        <p>An improvisation using custom-built instruments and live electronics.</p>
-        <p>
-          <a href="https://bandcamp.com/yourprofile" target="_blank" rel="noopener noreferrer">Bandcamp</a> |
-          <a href="https://soundcloud.com/yourprofile" target="_blank" rel="noopener noreferrer">SoundCloud</a> |
-          <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </p>
-      </article>
-      -->
-      <article class="music-entry">
-        <h2>Tardigrada: Drums and Hipertrombone with actuated mute</h2>
-        <p>
-          Improvisation recorded for In Trux We Pux - a compilation conducted by Favela Discos, that seeks to register and expose a 
-          series of sound tendencies and collaborative practices that have been developing in the experimental music scene of Porto. 
-        </p>
-          <iframe class="bandcamp" style="border: 0; width: 100%; height: 120px;" 
-            src="https://bandcamp.com/EmbeddedPlayer/album=2108533771/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2572386966/transparent=true/" seamless>
-            <a href="https://faveladiscos.bandcamp.com/album/in-trux-we-pux-04">In Trux We Pux 04 by Jorge Queijo &amp; Tiago Ângelo</a>
-          </iframe>
-        <p>
-          <a href="https://faveladiscos.bandcamp.com/album/in-trux-we-pux-04" target="_blank" rel="noopener noreferrer">
-            Link to In Trux We Pux volume 4</a>
-        </p>
-        <p>
-          <a href="https://faveladiscos.bandcamp.com/merch/in-trux-we-pux-bundle" target="_blank" rel="noopener noreferrer">
-            Link to every volume of the In Trux We Pux collection.</a>
-        </p>
-      </article>
-
-      <!-- Add more music entries as needed -->
-
-    </div>
-
-  </section>
-
-  <!-- JavaScript to load menu dynamically -->
-  <script src="/js/menu.js"></script> 
-
+  
 </body>
+
 </html>

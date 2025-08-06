@@ -1,90 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About & Contact</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* Hover photo container positioning */
-    .hover-photo {
-      position: relative;
-    }
-
-    /* All images hidden by default */
-    .hover-photo img {
-      display: none;
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    /* Default photo visible initially */
-    .hover-photo img.default {
-      display: block;
-      position: relative;
-    }
-
-    /* Hide all images when hovering a topic */
-    .topic:hover ~ .hover-photo img,
-    .topic:focus ~ .hover-photo img {
-      display: none;
-    }
-
-    /* Show specific images on hover */
-    .topic[data-photo="electronics"]:hover ~ .hover-photo img.electronics,
-    .topic[data-photo="electronics"]:focus ~ .hover-photo img.electronics {
-      display: block;
-    }
-    .topic[data-photo="performance"]:hover ~ .hover-photo img.performance,
-    .topic[data-photo="performance"]:focus ~ .hover-photo img.performance {
-      display: block;
-    }
-    .topic[data-photo="teaching"]:hover ~ .hover-photo img.teaching,
-    .topic[data-photo="teaching"]:focus ~ .hover-photo img.teaching {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-
-  <!-- Dynamic menu will load here -->
   <div id="menu-placeholder"></div>
+  <script src="/js/menu.js"></script>
 
-  <section class="about-contact">
-    <div class="photo hover-photo">
-      <img src="images/default.jpg" alt="Default portrait" class="default" />
-      <img src="images/electronics.jpg" alt="Working with electronics" class="electronics" />
-      <img src="images/performance.jpg" alt="Performing" class="performance" />
-      <img src="images/teaching.jpg" alt="Teaching" class="teaching" />
+  <div style="display: flex; gap: 2rem; margin-bottom: 2rem;">
+    <img id="profile-photo" src="/assets/photos/main.jpg" width="200" alt="Profile" />
+    <div>
+      <p onmouseover="changePhoto('electronics')">Electronics</p>
+      <p onmouseover="changePhoto('performance')">Performance</p>
+      <p onmouseover="changePhoto('teaching')">Teaching</p>
+      <p onmouseover="changePhoto('research')">Research</p>
     </div>
+  </div>
 
-    <div class="text">
-      <h2>About</h2>
-      <p>
-        I'm an artist and researcher working at the intersection of sound, electronics, and code.
-        I build instruments, design interactive systems, compose for stage, and teach at the university level.
-      </p>
+  <div>
+    <a href="mailto:your@email.com">Email</a> |
+    <a href="https://github.com/yourusername">GitHub</a> |
+    <a href="https://gumroad.com/yourstore">Gumroad</a>
+  </div>
 
-      <ul>
-        <li class="topic" data-photo="electronics">electronics</li>
-        <li class="topic" data-photo="performance">performance</li>
-        <li class="topic" data-photo="teaching">teaching</li>
-      </ul>
-
-      <h2>Contact</h2>
-      <div class="contact-icons">
-        <a href="mailto:your@email.com" aria-label="Email">&#9993;</a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#x1F5C3;</a>
-        <a href="https://gumroad.com/yourusername" target="_blank" rel="noopener" aria-label="Gumroad">&#128179;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- JavaScript to load menu dynamically -->
-  <script src="/js/menu.js"></script> 
-  
+  <script>
+    function changePhoto(type) {
+      const img = document.getElementById('profile-photo');
+      img.src = '/assets/photos/' + type + '.jpg';
+    }
+  </script>
 </body>
 </html>

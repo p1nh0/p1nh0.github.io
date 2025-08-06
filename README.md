@@ -1,120 +1,25 @@
-## How to preview pages
-Using VS Code press `CMD + L` followed by `CMD + O` (= Live Server open)
+# Personal Portfolio Website – tiagoangelo.net
 
-## Uploading to github
-On VS Code press `CTRL + ~` 
-Then hit git push and insert password
-(see local file `/_dev/_HOWTO.md` 
+## How to Add Content
 
-## Images and other media
-- All new images/media should go in `/assets/img` or relevant subfolders.
-- Preview images' recommended size: `300x200px` or `400x300px`
-- Full width images' recommended size: `900-1000px` (height dependent on content, but avoid tall images)
-- Page width caps at `960px` !!! 
-- You can use [Sqoosh](https://squoosh.app/) to compress images
-- Images are stored on github's repo for fast loading
-- Other content is either embedded through other platforms (ex: Bandcamp, etc.) or has a download link to your Gdrive
+### 1. Add a Work
+- Create a new HTML file in `/works/`, follow `_example-work.html` as template.
+- Include `<meta>` description and set a proper `<title>`.
+- Preview: image, title, and short description should go at top.
+- Works are loaded dynamically into `works.html` via JS.
 
+### 2. Add Music
+- Add Bandcamp/Soundcloud embed into `music.html`.
+- Wrap in `<div class="bandcamp-embed">...</div>` for consistency.
 
-# HOW TO: Add Content to www.tiagoangelo.net
+### 3. Add Free Stuff
+- Add file under `/freestuff/` matching one of the categories.
+- Link will auto-work from `freestuff.html`.
 
-This guide explains how to properly add new content to your portfolio site, following best practices for structure and SEO.
+### 4. Add Teaching
+- Add content to `teaching.html` as text or embedded media.
 
----
-
-## How to Add Content to **Projects**
-
-Each project is a separate HTML file in the `/projects` folder.
-
-### Steps:
-1. **Duplicate** `_example-project.html` and rename it (e.g. `2025-sound-sculpture.html`)
-2. In `/js/loadallprojects.js` add new project directory
-3. Fill in:
-   - `<title>` tag (SEO-relevant)
-   - `<meta name="description">` tag
-   - A relevant `<img>` for preview (stored in `/assets/img`)
-   - Text content using clean semantic HTML (`<h1>`, `<p>`, etc.)
-4. Save and test in browser.
-
-**SEO Tips:**
-- Use descriptive filenames: `year-name.html`  
-- Add alt text to images: `<img src="..." alt="Short description of the project">`
-- Keep descriptions concise and keyword-rich.
-
-The new project will automatically show up in `projects.html`.
-
----
-
-## How to Add Content to **Music**
-
-This is a single HTML file: `music.html`.
-
-### Steps:
-1. Open `music.html`
-2. Add a new music block inside the container (look at existing entries for format).
-3. Include:
-   - A short description
-   - Embeds from Bandcamp, SoundCloud, YouTube, etc.
-   - Date of creation/release (optional)
-
-**SEO Tips:**
-- Use `<h2>` or `<h3>` for titles.
-- Add `<meta>` tags for embeds if platform allows.
-- Keep descriptions clear and keyword-aware.
-
----
-
-## How to Add Content to **Free Stuff**
-
-Each grid category links to a separate HTML file inside `/freestuff`.
-
-### Steps:
-1. Choose the category (e.g., `maxforlive.html`)
-2. Add a new block with:
-   - Title
-   - Description
-   - Download link or external link (e.g. to Freesound)
-   - Optional preview (audio, image)
-
-To create a **new category**:
-1. Duplicate an existing category page (e.g., `maxpd.html`) and rename it.
-2. Update the link in `freestuff.html`.
-
-**SEO Tips:**
-- Use descriptive links (`download max patch`, `listen to samples`, etc.)
-- Include `alt` tags for all media.
-- Mention licenses clearly.
-
----
-
-## How to Add Content to **Teaching & Research**
-
-This is a single file: `teaching.html`.
-
-### Steps:
-1. Open `teaching.html`
-2. Add new teaching entry:
-   - Course/workshop title
-   - Brief description of content or role
-   - Optional image or link to materials
-3. For research, list:
-   - Title of publication
-   - Link (DOI, journal page, PDF)
-   - Brief abstract or summary
-
-**SEO Tips:**
-- Use proper headings and links.
-- Use `<article>` or `<section>` to separate blocks semantically.
-- Include dates where applicable.
-
----
-
-## Notes
-
-- All new images/media should go in `/assets/img` or relevant subfolders.
-- All internal links must use **absolute paths**, e.g. `/projects/2025-sound-sculpture.html`.
-- Keep code tidy and consistent.
-- Always test locally with **Live Server** before pushing to GitHub.
-- Local file `_dev/HOWTO.md`_HOWTO.md has more tips
-- local `/_dev/` has examples and other useful stuff
----
+## Tips
+- Keep image sizes optimized (e.g. 400x300 for previews).
+- Use only `.jpg` or `.webp` for full compatibility.
+- Maintain consistent metadata for SEO.

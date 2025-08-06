@@ -1,0 +1,16 @@
+[
+    {
+      "title": "Example Work",
+      "description": "This is a brief description of the example work.",
+      "file": "work-example.html",
+      "date": "2024-09-01",
+      "thumbnail": "/img/augmut-preview.jpg"
+    },
+    {
+      "title": "Another Work",
+      "description": "Another project's short summary.",
+      "file": "another-example.html",
+      "date": "2023-12-05",
+      "thumbnail": "/img/nkisi-preview.jpg"
+    }
+  ]

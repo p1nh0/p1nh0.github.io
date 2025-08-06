@@ -1,52 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home page -->
-  <url>
-    <loc>https://www.tiagoangelo.net/</loc>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Main content pages -->
-  <url>
-    <loc>https://www.tiagoangelo.net/projects.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/music.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/teaching-research.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/about.html</loc>
-  </url>
-
-  <!-- Free Stuff subpages -->
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/maxforlive.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/maxpd.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/electronics.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/soundlibs.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/soundpacks.html</loc>
-  </url>
-  <url>
-    <loc>https://www.tiagoangelo.net/freestuff/otherstuff.html</loc>
-  </url>
-
-  <!-- Example project (add more as you create them) -->
-  <url>
-    <loc>https://www.tiagoangelo.net/projects/_example-project.html</loc>
-  </url>
-
+  <url><loc>https://www.tiagoangelo.net/</loc></url>
+  <url><loc>https://www.tiagoangelo.net/about.html</loc></url>
+  <url><loc>https://www.tiagoangelo.net/music.html</loc></url>
+  <url><loc>https://www.tiagoangelo.net/teaching.html</loc></url>
+  <url><loc>https://www.tiagoangelo.net/works.html</loc></url>
+  <url><loc>https://www.tiagoangelo.net/freestuff.html</loc></url>
+  <!-- Add others as needed -->
 </urlset>
