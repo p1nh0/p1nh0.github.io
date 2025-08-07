@@ -3,7 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>About & Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tiagoangelo.net</title>
+  <meta name="author" content="Tiago Ângelo" /> 
+  <meta property="og:type" content="website" /> <!-- Open Graph tags improve sharing on social media platforms-->
+
+  <!-- EDIT THESE...-->
+  <meta name="description" content="Tiago Ângelo's contacts and about page." /> <!-- description: The short blurb that shows below your link in search results.-->
+  <meta name="robots" content="index, follow" /> <!-- "index, follow" is recommended unless page should be hidden from search engines -->
+  <meta property="og:title" content="About & Contacts – Tiago Ângelo" /> <!-- The title shown in social previews when shared -->
+  <meta property="og:description" content="Tiago Ângelo's contacts and about page." /> <!-- A snippet shown alongside the link preview. -->
+  <meta property="og:url" content="https://www.tiagoangelo.net/about.html" /> <!-- The canonical URL of the page -->
+  <meta property="og:image" content="https://www.tiagoangelo.net/img/profile.jpg" /> <!-- A preview image shown when the page is shared. Should be at least 1200x630px -->
+  <link rel="canonical" href="https://www.tiagoangelo.net/about.html"/> <!-- Prevents duplicate content issues by telling search engines which version of the page is the "original" or preferred one to index -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> <!-- favicon: icon that show on browser's tab -->
+
   <link rel="stylesheet" href="/css/style.css" />
   <script src="/js/menu.js"></script>
 </head>
@@ -12,13 +26,14 @@
   <div id="menu-placeholder"></div>
 
   <div style="display: flex; gap: 2rem; margin-bottom: 2rem;">
-    <img id="profile-photo" src="/assets/photos/main.jpg" width="200" alt="Profile" />
+    <img id="profile-photo" src="/img/profile.jpg" width="200" alt="Profile" />
+    <!-- dinamically change picture when hovering ????
     <div>
       <p onmouseover="changePhoto('electronics')">Electronics</p>
       <p onmouseover="changePhoto('performance')">Performance</p>
       <p onmouseover="changePhoto('teaching')">Teaching</p>
       <p onmouseover="changePhoto('research')">Research</p>
-    </div>
+    </div> -->
   </div>
 
   <div>
