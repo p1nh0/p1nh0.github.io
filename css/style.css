@@ -125,7 +125,7 @@
   }
   
   .work-thumbnail { /* small picture used in works.html*/
-    width: 900px;
+    width: 400px;
     height: auto;
     border-radius: 6px;
   }

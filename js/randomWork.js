@@ -25,7 +25,9 @@ fetch('/works/index.json')
     preview.className = 'work-preview-container';
 
     preview.innerHTML = `
-      <img src="${work.thumbnail}" alt="${work.title}" class="work-thumbnail" />
+      <a href="/works/${work.file}">
+        <img src="${work.thumbnail}" alt="${work.title}" class="work-thumbnail" />
+      </a>
       <div class="work-details">
         <div class="work-title">${work.title}</div>
         <div class="work-description">${work.description}</div>
