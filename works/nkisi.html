@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tiagoangelo.net</title> 
+  <meta name="author" content="Tiago Ângelo" /> 
+  <meta property="og:type" content="website" /> <!-- Open Graph tags improve sharing on social media platforms-->
+
+  <!-- EDIT THESE...-->
+  <meta name="description" content="Hybrid performance mediated by robotic light and sound." /> <!-- description: The short blurb that shows below your link in search results.-->
+  <meta name="robots" content="index, follow" /> <!-- "index, follow" is recommended unless page should be hidden from search engines -->
+  <meta property="og:title" content="NKISI – Tiago Ângelo" /> <!-- The title shown in social previews when shared -->
+  <meta property="og:description" content="Hybrid performance mediated by robotic light and sound." /> <!-- A snippet shown alongside the link preview. -->
+  <meta property="og:url" content="https://www.tiagoangelo.net/works/[optional-path]" /> <!-- The canonical URL of the page -->
+  <meta property="og:image" content="https://www.tiagoangelo.net/img/nkisi0.jpg" /> <!-- picture name with 0 appended is a preview image shown when the page is shared (at least 1200x630px) -->
+  <link rel="canonical" href="https://www.tiagoangelo.net/works/[optional-path]"/> <!-- Prevents duplicate content issues by telling search engines which version of the page is the "original" or preferred one to index -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> <!-- favicon: icon that show on browser's tab -->
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/menu.js"></script>
+</head>
+
+<body>
+  <div id="menu-placeholder"></div>
+
+  <!-- WORK TITLE -->
+  <h2>NKISI</h2>
+
+  <!-- USE THIS INSTEAD OF THE SLIDESHOW IF THERE IS ONLY 1 IMAGE 
+  <img src="/img/augmut1.jpg" alt="Example Work Image" class="work-picture"/>
+  -->
+
+  <!-- SLIDESHOW: you can duplicate div-slide to add more images and set captions(optional) -->
+  <div id="mySlideshow" class="slideshow">
+    <div class="slide">
+      <img src="/img/augmut0.jpg" alt="Slide 1" />
+      <div class="caption">Caption 1</div>
+    </div>
+    <div class="slide">
+      <img src="/img/augmut1.jpg" alt="Slide 2" />
+      <div class="caption">Caption 2</div>
+    </div>
+    <div class="slide">
+      <img src="/img/augmut2.jpg" alt="Slide 3" />
+      <div class="caption">Caption 3</div>
+    </div>
+    <!-- buttons  -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="dots-container"></div>
+  </div>
+  
+  <!-- TEXT -->
+  <p>NKISI is a music/performance hybrid that aims to dialogue with cosmogonies, cults and rituals, focusing on music 
+    and dance mediated by robotic sound and lighting devices.</p>
+  
+  <h3>Features</h3>
+    <ul>
+      <li>Multi-touch sensing with Arduino</li>
+      <li>Custom enclosure designed for ergonomics</li>
+      <li>Integration with Max/MSP for sound control</li>
+    </ul>
+
+  <h3>Downloads & Resources</h3>
+    <p>
+      <a href="../downloads/custom-synth-interface.zip" download>Download schematics and code</a>
+    </p>
+    <p>
+      <a href="../works.html" target="_blank"> Go to link. </a>
+    </p>
+    
+    <!-- FCT SPONSOR -->
+    <p>This projected was supported by FCT (Foundation for Science and Technology - Portugal).</p>  
+    <img src="/img/2022_FCT_Logo_B_horizontal_preto.png" alt="FCT Logo" class="fct-logo">
+  
+  <!-- SLIDESHOW : set timer delay if needed, default = 4s-->
+  <script src="/js/slideshow.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideshow('mySlideshow', { delay: 4000 });
+    });
+  </script>
+</body>
+
+</html>
