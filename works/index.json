@@ -3,21 +3,28 @@
       "title": "AugMut",
       "description": "Actuated trombone mute.",
       "file": "augmut.html",
-      "date": "2020-03-01",
+      "date": "2020-03-20",
       "thumbnail": "/img/augmut0.jpg"
     },
     {
       "title": "NKISI ",
       "description": "Hybrid performance mediated by robotic light and sound.",
       "file": "nkisi.html",
-      "date": "2021-06-01",
+      "date": "2021-06-04",
       "thumbnail": "/img/nkisi0.jpg"
     },
     {
       "title": "RADA™",
       "description": "Robotic musical ensemble.",
       "file": "rada.html",
-      "date": "2018-10-01",
+      "date": "2018-10-26",
       "thumbnail": "/img/rada0.jpg"
+    },
+    {
+      "title": "Echoplastos",
+      "description": "Sound installation using prepared loudspeakers.",
+      "file": "echoplastos.html",
+      "date": "2020-09-24",
+      "thumbnail": "/img/echoplastos0.jpg"
     }
   ]
