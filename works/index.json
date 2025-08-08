@@ -12,5 +12,12 @@
       "file": "nkisi.html",
       "date": "2021-06-01",
       "thumbnail": "/img/nkisi0.jpg"
+    },
+    {
+      "title": "RADA™",
+      "description": "Robotic musical ensemble.",
+      "file": "rada.html",
+      "date": "2018-10-01",
+      "thumbnail": "/img/rada0.jpg"
     }
   ]

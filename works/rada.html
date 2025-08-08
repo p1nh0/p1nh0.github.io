@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RADA™ | Tiago Ângelo</title> <!-- EDIT tab name -->
+  <meta name="author" content="Tiago Ângelo" /> 
+  <meta property="og:type" content="website" /> <!-- Open Graph tags improve sharing on social media platforms-->
+
+  <!-- EDIT THESE...-->
+  <meta name="description" content="Robotic musical ensemble." /> <!-- description: The short blurb that shows below your link in search results.-->
+  <meta name="robots" content="index, follow" /> <!-- "index, follow" is recommended unless page should be hidden from search engines -->
+  <meta property="og:title" content="RADA™ – Tiago Ângelo" /> <!-- The title shown in social previews when shared -->
+  <meta property="og:description" content="Robotic musical ensemble." /> <!-- A snippet shown alongside the link preview. -->
+  <meta property="og:url" content="https://www.tiagoangelo.net/works/[optional-path]" /> <!-- The canonical URL of the page -->
+  <meta property="og:image" content="https://www.tiagoangelo.net/img/rada0.jpg" /> <!-- picture name with 0 appended is a preview image shown when the page is shared (at least 1200x630px) -->
+  <link rel="canonical" href="https://www.tiagoangelo.net/works/[optional-path]"/> <!-- Prevents duplicate content issues by telling search engines which version of the page is the "original" or preferred one to index -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> <!-- favicon: icon that show on browser's tab -->
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/menu.js"></script>
+</head>
+
+<body>
+  <div id="menu-placeholder"></div>
+
+  <!-- WORK TITLE -->
+  <h2>RADA™</h2>
+  
+  <!-- YOUTUBE container example-->
+  <div class="video-embed">
+    <iframe title="YouTube video player"
+      src="https://www.youtube.com/embed/dJ7jVz77s6U?si=IMThR9XYuNiWJwF3"  
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  
+  <!-- TEXT -->
+  <p>RADA™ is a robotic musical ensemble comprised of three custom-made membranophones with different sizes. 
+    Using Arduino boards with custom-made shields to activate several motors and solenoids controlled via MIDI. 
+    The ensmeble was later expandend using internal loudspeakers, batteries, single board computers and a mobile structure, 
+    in order to study and experiment the use of mobile actuated musical robots in a performance context and the sonic possibilites 
+    within the acoustic space. Subsequently used in the <a href="/works/nkisi.html">NKISI</a> project.
+  </p>  
+  <p>
+    RADA™ was premiered at Semibreve Festival 2018, as a sound installation performing a self-generating algorithmic composition, 
+    programmed in MaxMSP. Based on a set of tradional haitian songs, it used genetic algorithms to develop a continuous set 
+    of rhythmic patterns slowly evolving through mutations. 
+  </p>  
+
+  <h3>Downloads & Resources</h3>
+    <p>
+      <a href="https://github.com/DEMO-Dispositivo/LOA" download>Github page with code and schematics.</a>
+    </p>
+  
+  <h3>More info</h3>
+    <p> Special thanks to: Gil MAC, Cláudio Vidal, Tiago Fróis, Américo Simões, FEUP (Faculty of Engineering - University of Porto), Oficinas do Convento, and Sonoscopia.
+    </p>
+    
+    <!-- FCT SPONSOR -->
+    <p>This projected was supported by FCT (Foundation for Science and Technology - Portugal).</p>  
+    <img src="/img/2022_FCT_Logo_B_horizontal_preto.png" alt="FCT Logo" class="fct-logo">
+  
+  <!-- SLIDESHOW : set timer delay if needed, default = 4s-->
+  <script src="/js/slideshow.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideshow('mySlideshow', { delay: 4000 });
+    });
+  </script>
+</body>
+
+</html>
