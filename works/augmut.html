@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tiagoangelo.net</title>
+  <meta name="author" content="Tiago Ângelo" /> 
+  <meta property="og:type" content="website" /> <!-- Open Graph tags improve sharing on social media platforms-->
+
+  <!-- EDIT THESE...-->
+  <meta name="description" content="[Short description of the page]" /> <!-- description: The short blurb that shows below your link in search results.-->
+  <meta name="robots" content="index, follow" /> <!-- "index, follow" is recommended unless page should be hidden from search engines -->
+  <meta property="og:title" content="[Page Title] – Tiago Ângelo" /> <!-- The title shown in social previews when shared -->
+  <meta property="og:description" content="[Short description of the page]" /> <!-- A snippet shown alongside the link preview. -->
+  <meta property="og:url" content="https://www.tiagoangelo.net/works/augmut.html" /> <!-- The canonical URL of the page -->
+  <meta property="og:image" content="https://www.tiagoangelo.net/img/profile.jpg" /> <!-- picture name with 0 appended is a preview image shown when the page is shared (at least 1200x630px) -->
+  <link rel="canonical" href="https://www.tiagoangelo.net/works/augmut.html"/> <!-- Prevents duplicate content issues by telling search engines which version of the page is the "original" or preferred one to index -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> <!-- favicon: icon that show on browser's tab -->
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/menu.js"></script>
+</head>
+
+<body>
+  <div id="menu-placeholder"></div>
+
+  <!-- WORK TITLE -->
+  <h2>AugMut: actuated trombone mute</h2>
+
+  <!-- USE THIS INSTEAD OF THE SLIDESHOW IF THERE IS ONLY 1 IMAGE 
+  <img src="/img/augmut1.jpg" alt="Example Work Image" class="work-picture"/>
+  -->
+
+  <!-- SLIDESHOW: you can duplicate div-slide to add more images and set captions(optional) -->
+  <div id="mySlideshow" class="slideshow">
+    <div class="slide">
+      <img src="/img/augmut0.jpg" alt="Slide 1" />
+      <div class="caption">Selecting loudspeakers</div>
+    </div>
+    <div class="slide">
+      <img src="/img/augmut1.jpg" alt="Slide 2" />
+      <div class="caption">Mute and loudspeaker assembly</div>
+    </div>
+    <div class="slide">
+      <img src="/img/augmut2.jpg" alt="Slide 3" />
+      <div class="caption">Connection diagram</div>
+    </div>
+    <div class="slide">
+      <img src="/img/augmut3.jpg" alt="Slide 4" />
+      <div class="caption">Ableton Live and MaxMSP setup</div>
+    </div>
+    <!-- buttons  -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="dots-container"></div>
+  </div>
+  
+  <!-- TEXT -->
+  <p>
+    AugMut is an actuated trombone mute, allowing to ‘blend’ acoustic and electronic sound, using a loudspeaker and 
+    microphone setup, where both sound sources radiate from a close-by point — the trombone’s bell. Providing an identical
+     sound source between acoustic and electronic sounds, this project provides the means to alter, augment, modify and 
+     interact with the trombone’s acoustic sound. By utilising digital sound processing techniques, using Ableton Live and 
+     MaxMSP, the feedback path between the loudspeaker and the microphone is explored through the instrument’s resonant body,
+      where the digital sound processing is controlled via MIDI messages (sent by HTB1 controller), enabling the performer 
+      to control sound processing parameters within the instrument, without the need for external MIDI controllers.
+  </p>
+
+  <h3>More info</h3>
+    <p>
+      HTB1 is a hypertrombone controller I've developed from 2009 to 2010 as part of my bachelor's programme.
+      <a href="/works/htb1.html">Read more.</a>
+    </p>
+    <p>
+      You can listen to music made with AugMut on this site's 
+      <a href="/music.html">Music</a> tab, or on 
+      <a href="https://faveladiscos.bandcamp.com/track/tardigrada" target="_blank">bandcamp</a>.
+    </p>
+    
+    <!-- FCT SPONSOR -->
+    <p>This projected was supported by FCT (Foundation for Science and Technology - Portugal).</p>  
+    <img src="/img/2022_FCT_Logo_B_horizontal_preto.png" alt="FCT Logo" class="fct-logo">
+  
+  <!-- SLIDESHOW : set timer delay if needed, default = 4s-->
+  <script src="/js/slideshow.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideshow('mySlideshow', { delay: 4000 });
+    });
+  </script>
+</body>
+
+</html>
