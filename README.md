@@ -32,6 +32,8 @@ Instructions on how to add content and use the necessary tools, cuz I'm like a g
 
 
 ## Images
+- images on thumbnails should be 4:3 ratio
+- images on slideshows should all have the same size (use omingraffle to cut images, there is a template called `Web Template 960x720`)
 - `projectname0.jpg` minimum width of `1200px` - these pictures are used as thumbnails (despite thumbnail loading much smaller widths, there is no need to duplicate files w/ different sizes) as well as outside the website (ex: social media, as referenced by Open Graph tabs on html header)
 - all other images have `960px` width
 - all images from `works` are stored in `/img/`
@@ -40,3 +42,4 @@ Instructions on how to add content and use the necessary tools, cuz I'm like a g
 
 ## Tips
 - `/dev/` folder has templates to copy html code from...
+- also has batch converters for images
