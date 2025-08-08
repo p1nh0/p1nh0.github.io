@@ -26,5 +26,12 @@
       "file": "echoplastos.html",
       "date": "2020-09-24",
       "thumbnail": "/img/echoplastos0.jpg"
+    },
+    {
+      "title": "Rumble Strip",
+      "description": "Sound installation using louspeakers and copper objects.",
+      "file": "rumblestrip.html",
+      "date": "2019-06-19",
+      "thumbnail": "/img/rumblestrip0.jpg"
     }
   ]
