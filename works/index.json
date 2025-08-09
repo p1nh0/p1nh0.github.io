@@ -47,6 +47,13 @@
       "file": "loa.html",
       "date": "2017-09-07",
       "thumbnail": "/img/loa0.jpg"
-    }
+    },
+    {
+      "title": "PHOBOS",
+        "description": "Dysfunctional robotic orchestra.",
+        "file": "phobos.html",
+        "date": "2017-05-27",
+        "thumbnail": "/img/phobos0.jpg"
+      }
 
   ]
