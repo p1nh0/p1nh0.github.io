@@ -4,56 +4,71 @@
       "description": "Actuated trombone mute.",
       "file": "augmut.html",
       "date": "2020-03-20",
-      "thumbnail": "/img/augmut0.jpg"
+      "thumbnail": "/img/augmut0.jpg",
+      "external": false
     },
     {
       "title": "NKISI ",
       "description": "Hybrid performance mediated by robotic light and sound.",
       "file": "nkisi.html",
       "date": "2021-06-04",
-      "thumbnail": "/img/nkisi0.jpg"
+      "thumbnail": "/img/nkisi0.jpg",
+      "external": false
     },
     {
       "title": "RADA™",
       "description": "Robotic musical ensemble.",
       "file": "rada.html",
       "date": "2018-10-26",
-      "thumbnail": "/img/rada0.jpg"
+      "thumbnail": "/img/rada0.jpg",
+      "external": false
     },
     {
       "title": "Echoplastos",
       "description": "Sound installation using prepared loudspeakers.",
       "file": "echoplastos.html",
       "date": "2020-09-24",
-      "thumbnail": "/img/echoplastos0.jpg"
+      "thumbnail": "/img/echoplastos0.jpg",
+      "external": false
     },
     {
       "title": "Rumble Strip",
       "description": "Sound installation using louspeakers and copper objects.",
       "file": "rumblestrip.html",
       "date": "2019-06-19",
-      "thumbnail": "/img/rumblestrip0.jpg"
+      "thumbnail": "/img/rumblestrip0.jpg",
+      "external": false
     },
     {
       "title": "AL",
       "description": "Sound installation and performance using mobile idiosyncratic sound diffusion devices.",
       "file": "al.html",
       "date": "2018-07-17",
-      "thumbnail": "/img/al0.jpg"
-    },
-    {
-    "title": "LOA",
-      "description": "Music performance hybrid.",
-      "file": "loa.html",
-      "date": "2017-09-07",
-      "thumbnail": "/img/loa0.jpg"
+      "thumbnail": "/img/al0.jpg",
+      "external": false
     },
     {
       "title": "PHOBOS",
         "description": "Dysfunctional robotic orchestra.",
         "file": "https://sonoscopia.pt/en/works/phobos/",
         "date": "2017-05-27",
-        "thumbnail": "/img/phobos0.jpg"
-      }
-
+        "thumbnail": "/img/phobos0.jpg",
+        "external": true
+      },
+      {
+        "title": "W",
+          "description": "Staged concert for robotic orchestra and puppets.",
+          "file": "https://sonoscopia.pt/en/works/w-en/",
+          "date": "2019-03-29",
+          "thumbnail": "/img/w0.jpg",
+          "external": true
+        },
+        {
+          "title": "Disposofónicos",
+            "description": "Exhibition with Sonoscopia´s selected works.",
+            "file": "https://sonoscopia.pt/en/works/disposofonicos/",
+            "date": "2019-04-29",
+            "thumbnail": "/img/disposofonicos0.jpg",
+            "external": true
+          }
   ]

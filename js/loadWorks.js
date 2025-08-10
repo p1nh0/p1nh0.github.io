@@ -11,10 +11,10 @@ fetch('/works/index.json')
       const preview = document.createElement('div');
       preview.className = 'work-preview-container';
 
-      // Detect if it's an external link
-      const isExternal = /^https?:\/\//i.test(work.file);
-      const link = isExternal ? work.file : `/works/${work.file}`;
-      const targetAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+      // Check if it's an external link
+      const link = work.external ? work.file : `/works/${work.file}`;
+      const targetAttr = work.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+
 
       preview.innerHTML = `
         <a href="${link}"${targetAttr}>
