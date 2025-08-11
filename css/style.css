@@ -66,6 +66,7 @@
 
   /* Menu */
   nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
