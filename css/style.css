@@ -66,8 +66,6 @@
 
   /* Menu */
   nav {
-    font-size: 1rem; /* Inherits from body but allows scaling */
-    font-family: inherit;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
