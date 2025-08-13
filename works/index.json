@@ -54,21 +54,6 @@
         "date": "2017-05-27",
         "thumbnail": "/img/phobos0.jpg",
         "external": true
-      },
-      {
-        "title": "W",
-          "description": "Staged concert for robotic orchestra and puppets.",
-          "file": "https://sonoscopia.pt/en/works/w-en/",
-          "date": "2019-03-29",
-          "thumbnail": "/img/w0.jpg",
-          "external": true
-        },
-        {
-          "title": "Disposofónicos",
-            "description": "Exhibition with Sonoscopia´s selected works.",
-            "file": "https://sonoscopia.pt/en/works/disposofonicos/",
-            "date": "2019-04-29",
-            "thumbnail": "/img/disposofonicos0.jpg",
-            "external": true
-          }
+      }
+      
   ]
