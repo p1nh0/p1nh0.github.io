@@ -24,14 +24,6 @@
           "external": true
         },
       {
-        "title": "Transarkiv",
-          "description": "Web-based automatic archive mixer and recorder.",
-          "file": "http://sonoscopia.github.io/Transarkiv/",
-          "date": "2016-04-15",
-          "thumbnail": "/img/transarkiv0.jpg",
-          "external": true
-        },
-      {
         "title": "W",
           "description": "Staged concert for robotic orchestra and puppets.",
           "file": "https://sonoscopia.pt/en/works/w-en/",
