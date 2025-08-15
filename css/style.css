@@ -123,11 +123,17 @@
     gap: 1rem;
     align-items: flex-start;
   }
-  
+
+  .work-thumbnail-small{ /* even smaller picture used in pages with more text and different content types (ex: research.html)*/
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+  }
+
   .work-thumbnail { /* small picture used in works.html*/
     width: 400px;
     height: auto;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
   .work-picture { /* full-size pitcure on /works/work-example.html... */
@@ -146,6 +152,12 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+  }
+
+  .work-title-small { /* for smaller content (ex: research.html)*/
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
   }
   
   .work-description {
