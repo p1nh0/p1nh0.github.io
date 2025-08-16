@@ -3,7 +3,7 @@ Instructions on how to add content and use the necessary tools, cuz I'm like a g
 
 ## Using VS Code
 - press `CMD + L` followed by `CMD + O` (= Live Server open) to preview webpages
-- to push to github press `CTRL + ~`, type `git push` and press enter
+- to push to github press `CTRL + ~`, type `git push` and press enter, then type password
 - press `CMD + P` to open files and `CMD + SHIFT + P` to search functions (not sure it's called "functions")
 
 ## HOW TO ADD CONTENT
@@ -11,24 +11,26 @@ Instructions on how to add content and use the necessary tools, cuz I'm like a g
 ### 1. Add a Work
 - Create a new HTML file in `/works/`, follow `work-example.html` as template.
 - On `/works/index.json` add the new work, which is then loaded dynamically into `works.html` via JS.
-- On the new html file edit info in `<head>`.
-- Then follow comments to add content
-- If you need to add other containers (ex: youtube, bandcamp, etc.) copy from `/dev/media-containers/`
+- On the new html file edit info in `<head>`, then follow comments to add content.
+- If you need to add other containers (ex: youtube, bandcamp, etc.) copy from `/dev/media-containers/` or from other works.
 - If adding more than 1 image, copy them to `/img/_originals/` and then use 
-`IMAGE BATCH PROCESSOR.workflow` 
+`IMAGE BATCH PROCESSOR.workflow` or see `Images` below
 - Update sitemap.xml
 
-### 2. Add Music
-- Add Bandcamp/Soundcloud embed into `music.html`.
-- Wrap in `<div class="bandcamp-embed">...</div>` for consistency.
+### 2. Add to or move a work to Archive
+- Archived works are displayed in archive.html dynamically 
+- Same as Works, but description lies in `/works/index-archive.json`
+- Update sitemap.xml
 
-### 3. Add Free Stuff
-- Add file under `/projects/` matching one of the categories.
-- Link will auto-work from `freestuff.html`.
+### 3. Add Music
+- Copy from an existing entry that is most similar.
 
+### 4. Add Downloads
+- Projects link to external pages
+- Follow what is already on electronics.html, software.html, maxforlive.html or tutorial.html 
 
-### 4. Add Teaching
-- Add content to `research.html` as text or embedded media.
+### 5. Add Research
+- Follow what is already on research.html
 
 
 ## Images
