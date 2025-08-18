@@ -23,6 +23,13 @@
   <url>
     <loc>https://www.tiagoangelo.net/about.html</loc>
   </url>
+  <!-- other content pages -->
+  <url>
+    <loc>https://www.tiagoangelo.net/archive.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/agenda.html</loc>
+  </url>
 
 <!-- Downloads subpages -->
   <url>
@@ -41,12 +48,39 @@
     <loc>https://www.tiagoangelo.net/soundpacks.html</loc>
   </url>
   <url>
-    <loc>https://www.tiagoangelo.net/otherstuff.html</loc>
+    <loc>https://www.tiagoangelo.net/tutorials.html</loc>
   </url>
 
 <!-- WORKS (add more as you create them) -->
   <url>
+    <loc>https://www.tiagoangelo.net/works/al.html</loc>
+  </url>
+  <url>
     <loc>https://www.tiagoangelo.net/works/augmut.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/cadeirofone.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/echoplastos.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/htb1.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/loa.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/nkisi.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/rada.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/rumblestrip.html</loc>
+  </url>
+  <url>
+    <loc>https://www.tiagoangelo.net/works/utubo.html</loc>
   </url>
 
 </urlset>
