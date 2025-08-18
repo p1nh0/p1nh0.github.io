@@ -70,6 +70,14 @@
           "date": "2013-03-30",
           "thumbnail": "/img/utubo0.jpg",
           "external": true
+        },
+      {
+        "title": "Verisimilitude",
+          "description": "Piece for augmented tenor saxophone.",
+          "file": "/works/verisimilitude.html",
+          "date": "2018-06-15",
+          "thumbnail": "/img/verisimilitude-thumbnail.jpg",
+          "external": true
         }
 
   ]
